@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckedActivity">
+
+    <TextView
+        android:id="@+id/files_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Files not found"
+        android:visibility="invisible" />
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue_1896"/>
+        <ImageView
+            android:id="@+id/sorted_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            android:src="@drawable/sorting_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"/>
+        <Button
+            android:id="@+id/chenged_files"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:text="Изменённые файлы"
+            android:textSize="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        />
+
+</RelativeLayout>

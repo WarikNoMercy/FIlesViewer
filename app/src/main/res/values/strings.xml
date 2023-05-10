@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Files viewer</string>
+    <string name="heading">Здесь будут ваши файлы</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item1"
+        android:title="По названию"/>
+    <item android:id="@+id/item2"
+        android:title="По размеру (По возрастанию)"/>
+    <item android:id="@+id/item3"
+        android:title="По размеру (По убыванию)"/>
+    <item android:id="@+id/item4"
+        android:title="По дате создания (По возрастанию)"/>
+    <item android:id="@+id/item5"
+        android:title="По дате создания (По убыванию)"/>
+    <item android:id="@+id/item6"
+        android:title="По расширению (По возрастанию)"/>
+    <item android:id="@+id/item7"
+        android:title="По расширению (По убыванию)"/>
+</menu>

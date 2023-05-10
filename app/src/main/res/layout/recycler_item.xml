@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_below"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            tools:src="@drawable/doc_file"
+            android:id="@+id/icon_view"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_toEndOf="@id/icon_view"
+            android:textColor="@color/black"
+            android:text="Document"
+            android:id="@+id/file_name_text_view"/>
+        <TextView
+            android:id="@+id/file_size_text_view"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="size"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/file_name_text_view"
+            />
+        <TextView
+            android:id="@+id/file_date_text_view"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/file_size_text_view"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linear_under"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/cardview_shadow_end_color"
+            />
+</RelativeLayout>
