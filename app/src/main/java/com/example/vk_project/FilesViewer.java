@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -57,12 +58,15 @@ public class FilesViewer extends RecyclerView.Adapter<FilesViewer.ViewHolder>{
             holder.textViewSize.setText(fileSizeStr);
         }
 
+
+        //Add date of changing file
         Date lastModDate = new Date(selectedFile.lastModified());
         holder.textViewDate.setText(lastModDate.toString());
 
+
+        //Receiving the extension
         String fileName = selectedFile.getName();
         String fileExt = fileName.substring(fileName.lastIndexOf(".") + 1);
-        //String fileSizeStr = "Size: " + fileSize + " " + "Bytes";
         if(selectedFile.isDirectory()) {
             holder.imageView.setImageResource(R.drawable.folder);
         }else{
